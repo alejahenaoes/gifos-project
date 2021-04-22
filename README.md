@@ -1,6 +1,7 @@
 # Gifos Project 
 A Front-End project from Acamica's course. Built using Giphy's API.
 Developed by @alejahenaoes
+[Click here to view the live version.](https://alejahenaoes.github.io/gifos-project/) 
 # Technologies used for this project:
 Visual Studio Code as code editor
 
