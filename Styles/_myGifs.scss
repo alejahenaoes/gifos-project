@@ -1,0 +1,171 @@
+@import 'variable.scss';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    // background-color: white;
+}
+.myGifsSection{
+    border: none;
+    display: none;
+    .titleSection{
+        margin-top: 5px;
+        text-align: center;
+        .titlemyGifs{
+            margin-top: 7px;
+            font-family: $MonsBold;
+            color: $purpleMain;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .verMasBtnmyGifs{
+        text-align: center;
+        // display: flex;
+        display: none;
+        margin: 78px auto;
+    }
+}
+.sinGifs{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 34px;
+    img{
+        margin: 60px auto auto;
+    }
+    .textSinGifs{
+        margin: auto;
+        margin-top: 20px;
+        width: 250px;
+        font-family: $MonsBold;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0;
+        color: $blueActive;
+    }
+}
+.gridMyGifs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 21px;
+    justify-content: center;
+    .myImage{ //a nueva clase
+        width: 156px;
+        height: 120px;
+        margin: 21px 21px 0px 0px;
+    }
+    .myNewGif{
+        width: 100%;
+        height: 100%;
+    }
+}
+.hoverOptionsNew{
+    display: none;
+}
+
+@media (min-width:768px){
+    .myGifsSection{
+        margin-bottom: 78px;
+        .titleSection{
+            .titlemyGifs{
+                margin: 11px 0px 0px 0px;
+                font-family: $MonsBold;
+                font-size: 25px;
+                line-height: 30px;
+            }
+        }
+    }
+    .gridMyGifs{
+        justify-content: center;
+        .myImage{
+            width: 260px;
+            height: 200px;
+            margin: 29px 29px 0px 0px;
+            }
+    }
+    .hoverOptionsNew{
+        display: inline-block;
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        text-align: end;
+        width: 260px;
+        height: 200px;
+        transform: translate(0px, -201px);
+    .optionsGifNew{
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .trashNew img, .maxNew img, .downNew img{
+        border-radius: 6px;
+    }
+    .trashNew, .maxNew, .downNew{
+        display: flex;
+        cursor: pointer;
+        margin: 5px;
+        border-radius: 6px;
+        .btnHoverNew{
+            display: none;
+            }
+            &:hover{
+                .normalNew{
+                    display: none;
+                }
+                .btnHoverNew{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .myImage:hover .hoverOptionsNew{
+        opacity: 0.7;
+        background-color: #572EE5;
+    }
+    .textGifNew{
+        color: #FFFFFF;
+        background: transparent;
+        font-family: $robotoReg;
+        text-align: left;
+        margin: 80px ​0px 0px 12px;
+        width: 100%;
+        p{
+            margin-top: 0px;
+        }
+    .userNew{
+        font-size: 15px;
+        background: transparent;
+        height: 17px;
+        margin: 90px 0 0 13px;
+    }
+    .titleGifNew{
+        line-height: normal; //que no se sobreponga el texto
+        height: auto;
+        width: 95%;
+        background: transparent;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0px 0 0 10px;
+
+    }
+}
+.sinGifs{
+    padding-bottom: 137px;
+    img{
+        margin: 109.3px auto auto;
+    }
+    .textSinGifs{
+    margin-top: 24px;
+    width: 431px;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0;
+    }
+}
+}

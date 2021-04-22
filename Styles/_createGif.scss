@@ -1,0 +1,145 @@
+@import 'variable.scss';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    // background-color: white;
+}
+.createSection{
+    display: none;
+}
+
+@media (min-width: 768px) {
+.createSection{
+    display: none; //con flex
+    margin: 4px 0 102px 156px;
+    .camera{
+        display: flex;
+    }
+    .createCtn{
+        border: 1px $purpleMain solid;
+        width: 688px;
+        height: 390px;
+        .step1Text{
+            border: 1px solid $blueActive;
+            margin: 21px;
+            height: 348px;
+            .inner{
+                margin-top: 114px;
+                // display: none;
+            }
+            .camStream{
+                margin: 14px auto;
+                // Se ve el video
+                width: 480px;
+                height: 320px;
+                display: none;
+            }
+            .createTitleMain, .gifosWord{
+                font-family: $MonsBold;
+                font-size: 25px;
+                color: $purpleMain;
+                text-align: center;
+                line-height: 35px;
+                .gifosWord{
+                    color: $blueActive;
+                }
+            }
+            .createContent{
+                font-family: $robotoReg;
+                font-size: 16px;
+                color: $blackTextColor;
+                text-align: center;
+                line-height: 29px;
+            }
+        }
+        .uploadingBox{
+            display: none;
+            transform: translate(79px, -334px);
+            position: absolute;
+            width: 480px;
+            height: 320px;
+            background-color: #572EE5;
+            text-align: center;
+            opacity: 0.6;
+            .uploadingContent{
+                padding: 25% 0;
+                .uploadingIcon{
+                    margin: 10px;
+                }
+                .uploadingText{
+                    font-family: $MonsBold;
+                    font-weight: bold;
+                    color: white;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .createButtons{
+        display: flex;
+        .record, .finish, .upload{
+            display: none;
+        }
+        .btn{
+            // display: none;
+            margin: 20.1px auto 26px auto;
+            justify-content: center;
+            border: 1px solid #572EE5;
+            border-radius: 25px;
+            width: 127px;
+            height: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            color: $purpleMain;
+            cursor: pointer;
+        }
+    }
+    .stepsOptions{
+        display: flex;
+        padding-bottom: 19px;
+        border-bottom: 7px $purpleMain solid;
+        .steps{
+            // text-align: center;
+            color: $purpleMain;
+            display: flex;
+            margin: auto;
+            width: 160px;
+            justify-content: space-around;
+            .item1, .item2, .item3{
+                border: 1px solid $purpleMain;
+                border-radius: 50%;
+                margin-top: 24px;
+                // margin-right: 26px;
+                // grid: 26px;
+                width: 32px;
+                height: 32px;
+                font-family: $robotoReg;
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 400;
+                text-align: center;
+                letter-spacing: 0;
+                cursor: pointer;
+            }
+        }
+        .timekeeperItem{
+            display: none;
+            font-family: $MonsBold;
+            color: #572EE5;
+            font-weight: bold;
+            margin: 37px 0 0 0;
+            position: absolute;
+            right: 29%;
+        }
+    }
+    .movieIcon{
+        padding: 380px 0px 0px 67px;
+    }
+    
+}}

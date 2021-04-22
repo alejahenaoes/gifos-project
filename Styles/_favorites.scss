@@ -1,0 +1,106 @@
+@import 'variable.scss';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    // background-color: white;
+}
+.favoritesSection{
+    border: none;
+    display: none;
+    .titleSection{
+        margin-top: 5px;
+        text-align: center;
+        .titleFavorites{
+            margin-top: 7px;
+            font-family: $MonsBold;
+            color: $purpleMain;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .verMasBtnFavs{
+        text-align: center;
+        display: none;
+        margin: 78px auto;
+    }
+}
+.sinFavs{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 34px;
+    img{
+        margin: 60px auto auto;
+    }
+    .textSinFavs{
+        margin: auto;
+        margin-top: 20px;
+        width: 250px;
+        font-family: $MonsBold;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0;
+        color: $blueActive;
+    }
+}
+.gridFavorites{
+    display: flex;
+    // display: none;
+    flex-wrap: wrap;
+    margin-left: 21px;
+    justify-content: center;
+    .favImage{ //a nueva clase
+        width: 156px;
+        height: 120px;
+        margin: 21px 21px 0px 0px;
+    }
+    .myFavGif{
+        width: 100%;
+        height: 100%;
+    }
+}
+.hoverOptionsFavs{
+    display: none;
+    }
+@media (min-width:768px){
+    .favoritesSection{
+        margin-bottom: 78px;
+        .titleSection{
+            .titleFavorites{
+                margin: 11px 0px 0px 0px;
+                font-family: $MonsBold;
+                font-size: 25px;
+                line-height: 30px;
+
+            }
+        }
+    }
+    .gridFavorites{
+        display: flex;
+        justify-content: center;
+        .favImage{
+            width: 260px;
+            height: 200px;
+            margin: 29px 29px 0px 0px;
+        }
+    }
+    .sinFavs{
+        padding-bottom: 137px;
+        img{
+            margin: 109.3px auto auto;
+        }
+        .textSinFavs{
+            margin-top: 24px;
+            width: 431px;
+            font-size: 22px;
+            line-height: 33px;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 0;
+        }
+    }
+}

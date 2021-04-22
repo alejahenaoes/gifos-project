@@ -1,0 +1,64 @@
+.pageContainer.darkMode{
+    background-color: $greyDM;
+}
+
+.navbar{
+    .menu.darkMode{
+        background-color: black;
+        
+    }
+}
+
+.allSearch.darkMode{
+    border: 1px solid white;
+}
+
+.trendingSection.darkMode{
+    background-color: #222326;
+    .titleSection h2, .paragraph p{
+        color: white;
+    }
+}
+
+@media (min-width:768px){
+    .navbar{
+        .menu.darkMode{
+            background-color: transparent;
+            li{
+                .navItem.darkMode{
+                    color: white;
+                }
+            }
+        }
+    } 
+    .createSection{
+        .createCtn.darkMode{
+            border: 1px white solid;
+                .createTitleMain.darkMode{
+                    color: white;
+                }
+                .createContent{
+                    color: white;
+                }
+            }
+        }
+        .createButtons{
+            .btn.darkMode{
+                border: 1px solid white;
+                color: white;
+                background-color: transparent;
+            }
+        }
+        .stepsOptions.darkMode{
+            border-bottom: 7px white solid;
+            .steps{
+                color: white;
+                .item1, .item2, .item3{
+                    border: 1px solid white;
+                }
+            }
+        }
+    }
+
+
+//     // background-color: $greyDM;
