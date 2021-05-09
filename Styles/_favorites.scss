@@ -1,106 +1,93 @@
 @import 'variable.scss';
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 14px;
-    // background-color: white;
-}
-.favoritesSection{
-    border: none;
-    display: none;
-    .titleSection{
-        margin-top: 5px;
-        text-align: center;
-        .titleFavorites{
-            margin-top: 7px;
-            font-family: $MonsBold;
-            color: $purpleMain;
-            font-size: 20px;
-            line-height: 30px;
-        }
-    }
-    .verMasBtnFavs{
-        text-align: center;
-        display: none;
-        margin: 78px auto;
-    }
-}
-.sinFavs{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 34px;
-    img{
-        margin: 60px auto auto;
-    }
-    .textSinFavs{
-        margin: auto;
-        margin-top: 20px;
-        width: 250px;
-        font-family: $MonsBold;
-        font-size: 18px;
-        line-height: 20px;
-        font-weight: 700;
-        text-align: center;
-        letter-spacing: 0;
-        color: $blueActive;
-    }
-}
-.gridFavorites{
-    display: flex;
-    // display: none;
-    flex-wrap: wrap;
-    margin-left: 21px;
-    justify-content: center;
-    .favImage{ //a nueva clase
-        width: 156px;
-        height: 120px;
-        margin: 21px 21px 0px 0px;
-    }
-    .myFavGif{
-        width: 100%;
-        height: 100%;
-    }
-}
-.hoverOptionsFavs{
-    display: none;
-    }
-@media (min-width:768px){
-    .favoritesSection{
-        margin-bottom: 78px;
-        .titleSection{
-            .titleFavorites{
-                margin: 11px 0px 0px 0px;
-                font-family: $MonsBold;
-                font-size: 25px;
-                line-height: 30px;
 
+.page-container{
+    .favorite-gifos-section{
+        display: none;
+        margin: auto;
+        margin-top: 5px;
+        padding-bottom: 34px;
+        .favorite-gifos-icon{
+            margin: auto;
+            display: block;
+        }
+        .favorite-gifos-title{
+            margin-top: 7px;
+            @include MonsBold(20px,30px,700);
+            color: $purpleMain;
+        }
+        .favorite-gifos-container{
+            display: none;
+            margin: auto;
+            margin-top: 46px;
+            max-width: 375px;
+        }
+        .without-favorites-container{
+            display: none;
+            margin-top: 60px;
+            .img-without-favs{
+                display: block;
+                margin: auto;
+            }
+            .content-without-favs{
+                margin: auto;
+                margin-top: 20px;
+                width: 250px;
+                @include MonsBold(18px,20px,700);
+                color: $blueActive;
             }
         }
     }
-    .gridFavorites{
-        display: flex;
-        justify-content: center;
-        .favImage{
-            width: 260px;
-            height: 200px;
-            margin: 29px 29px 0px 0px;
+}
+
+@media (min-width:768px){
+    .page-container{
+        .favorite-gifos-section{
+            .favorite-gifos-container{
+                max-width: 729px;
+            }
         }
     }
-    .sinFavs{
-        padding-bottom: 137px;
-        img{
-            margin: 109.3px auto auto;
+}
+
+@media (min-width:1024px){
+    .page-container{
+        .favorite-gifos-section{
+            margin: 11px auto 79px auto;
+            .favorite-gifos-title{
+                margin-top: 8px;
+                @include MonsBold(25px,30px,700);
+                color: $purpleMain;
+            }
+            .favorite-gifos-container{
+                max-width: 896px;
+                margin-top: 36px;
+            }
+            .without-favorites-container{
+                margin-top: 110px;
+                .content-without-favs{
+                    margin-top: 24px;
+                    width: 431px;
+                    @include MonsBold(22px,33px,700);
+                }
+            }
         }
-        .textSinFavs{
-            margin-top: 24px;
-            width: 431px;
-            font-size: 22px;
-            line-height: 33px;
-            font-weight: 700;
-            text-align: center;
-            letter-spacing: 0;
+    }
+}
+@media (min-width: 1185px){
+    .page-container{
+        .favorite-gifos-section{
+            .favorite-gifos-container{
+                max-width: 1185px;
+            }
+        }
+    }
+}
+@media (min-width: 1185px){
+    .page-container{
+        .favorite-gifos-section{
+            .favorite-gifos-container{
+                max-width: 1185px;
+            }
         }
     }
 }
